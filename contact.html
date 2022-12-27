@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kaela Pardo-Portfolio-Contact</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <header class="page-header">
+            <img class="logo" src="img/logo.svg"> 
+            <nav>
+                <ul class="menubar" role="menubar">
+                    <li class="menuitem" role="presentation">
+                        <a class="inactive-page" role="menuitem" href="index.html">Home</a>
+                    </li>                        <li class="menuitem" role="presentation">
+                        <a class="inactive-page" role="menuitem" href="about.html">About Me</a>
+                    </li>
+                    <li class="menuitem" role="presentation">                                
+                        <a class="inactive-page" role="menuitem" href="work.html">Work</a>
+                    </li>
+                    <li class="menuitem" role="presentation">
+                        <a class="active-page" role="menuitem" href="contact.html">Contact</a>                        </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Main body content goes here-->
+            <div>
+                Kaela Pardo
+                <br>
+                5 SE MLK Jr Blvd
+                <br>
+                Portland,OR
+                <br>
+                USA
+                <br>
+                <br>
+                Phone: 
+                <a href="tel:9712356331" aria-label="tel:9712356331">(971) 235-6331</a>
+                <br>
+                Email: 
+                <a href="mailto:kaelapardo8@gmail.com" airia-label="mailto:kaelapardo8@gmail.com">kaelapardo8(at)gmail(dot)com</a>
+                <br>
+                <br>
+                <a href="mailto:kaelapardo8@gmail.com">Contact Me</a>
+            </div>
+            <br>
+            <form id="contact-form" action="" method="post">
+                <label class="standard-label" for="name"><span id="required">*</span>Name:</label><br>
+                <input id="name" type="text" placeholder="Your name here" required>
+                <br>
+                <label class="standard-label" for="email"><span id="required">*</span>Email:</label><br>
+                <input id="email" type="email" placeholder="Your email here" required>
+                <br>
+                <label class="standard-label" for="tel">Phone:</label><br>
+                <input id="tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Your phone number here" required>
+                <br>
+                <label class="standard-label" for="message"><span id="required">*</span>Message:</label><br>
+                <textarea id="message" type="text" placeholder="Your message here" maxlength="240" required></textarea>
+                <br>
+                <br>
+                <button type="submit" value="Send Message">Submit</button>
+                <br>
+                <p id="required">Fields marked with * are required</p>
+            </form>
+        </main>
+        <footer class="page-footer">
+            <p>Find me on</p>
+            <div class="social-media">
+                <link href="https://github.com/kaelacodes"><img src="img/githubicon.svg" alt="Link to GitHub"></link>
+                <link href="https://www.linkedin.com/in/kaela-pardo/"><img src="img/linkedinicon.svg" alt="Link to LinkedIn"></link>
+                <link href="#"><img src="img/twittericon.svg" alt="Link to Twitter"></link>
+            </div>
+        </footer>
+    <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
