@@ -324,12 +324,14 @@ svg.PNW {
     font-size: 20px;
   }
 }
-table {
+.skills-table {
+    margin-left: auto;
+    margin-right:auto;
     border: #324943 dotted;
     text-align: center;
     padding: 10px;
 }
-th {
+th .skills-table {
     text-decoration: underline;
     padding: 5px;
 }

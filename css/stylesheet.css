@@ -222,12 +222,14 @@ svg.PNW {
     font-size: 20px;
   }
 }
-table {
+.skills-table {
+    margin-left: auto;
+    margin-right:auto;
     border: var(--secondary-color) dotted;
     text-align: center;
     padding: 10px;
 }
-th {
+th .skillstable {
     text-decoration: underline;
     padding: 5px;
 }
