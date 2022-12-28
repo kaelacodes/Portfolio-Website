@@ -55,7 +55,7 @@ a:active {
 }
 .menuitem {
     display: inline-block;
-    padding: 10px;
+    padding: auto;
 }
 .active-page {
     /* Underline link when page is active */
