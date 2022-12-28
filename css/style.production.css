@@ -229,6 +229,7 @@ a:active {
 .project-grid__item {
     display: inline-block;
     width: 33%;
+    padding: auto;
    }
 /* end grid fallback */
 .project-grid {
