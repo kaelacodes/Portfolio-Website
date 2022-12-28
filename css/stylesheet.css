@@ -81,7 +81,66 @@ a:active {
     margin-bottom: auto;
     text-align: center;
 }
-
+.hometown-img {
+    width: 100%;
+    height: 100%;
+}
+@keyframes clouds-one_move {
+    from {
+        transform: translate(0px,0px);
+    }
+    to {
+        transform: translate(20px,0px);
+    }
+}
+@keyframes clouds-two_move {
+    from {
+        transform: translate(0px,0px);
+    }
+    to {
+        transform: translate(10px,0px);
+    }
+}
+.clouds-one {
+    animation: 10s clouds-one_move infinite alternate linear;
+}
+.clouds-two {
+    animation: 15s clouds-two_move infinite alternate linear;
+}
+@keyframes sun-ray_wiggle {
+    0% {
+        transform: rotate(.05deg);
+    }
+    50% {
+        transform: rotate(-.05deg);
+    }
+    100% {
+        transform: rotate(.05deg);
+    }
+  }
+.sun-ray {
+    animation-name: sun-ray_wiggle;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes sun-ray_wiggle-two {
+    0% {
+        transform: rotate(-.05deg);
+    }
+    50% {
+        transform: rotate(.05deg);
+    }
+    100% {
+        transform: rotate(-.05deg);
+    }
+  }
+.sun-ray_two {
+    animation-name: sun-ray_wiggle-two;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
 .hobbies {
     list-style-type: none;
     padding:0;
