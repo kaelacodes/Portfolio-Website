@@ -370,7 +370,7 @@ button:focus,
     cursor: pointer;
     opacity: 0.8;
 }
-#required {
+.required {
     color:crimson;
 }
 .page-footer {
