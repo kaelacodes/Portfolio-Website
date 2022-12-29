@@ -153,6 +153,8 @@ a:active {
 /* end grid fallback */
 .project-grid {
     display:grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin:0;
