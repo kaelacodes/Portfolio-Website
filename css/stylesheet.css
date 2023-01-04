@@ -1,3 +1,4 @@
+/* Base Website Styles */
 * {
     box-sizing: border-box;
 }
@@ -22,6 +23,13 @@ main {
     padding:25px;
     text-align:center
 }
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+}
 a {
     color: var(--tertiary-color);
 }
@@ -36,6 +44,30 @@ a:active {
     color: var(--tertiary-color-lightest);
     opacity: 0.5;
 }
+button,
+.button {
+    border: none;
+    display:inline-block;
+    font-family: inherit;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color-lightest);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom:2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
+}
+button:hover, 
+button:focus,
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Header Styles */
+
 .page-header {
     display: flex;
     width: 100%;
@@ -44,19 +76,58 @@ a:active {
     align-items: center;
     margin:20px;
 }
-.logo {
-    border-radius: 30%;
-    height:75px;
-    width: 75px;
-}
 .menubar {
     list-style-type: none;
     padding-left: 20px;
 }
-.menuitem {
-    display: inline-block;
-    padding: auto;
+@media all and (max-width: 300px){
+    .menuitem {
+        display: inline-block;
+        padding:2px;
+        font-size: 10px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:50px;
+        width: 50px;
+    }
 }
+@media all and (min-width:300px) and (max-width: 400px) {
+    .menuitem {
+        display: inline-block;
+        padding:5px;
+        font-size: 12px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:50px;
+        width: 50px;
+    }
+  }
+@media all and (min-width:400px) and (max-width: 600px) {
+    .menuitem {
+        display: inline-block;
+        padding:10px;
+        font-size: 14px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:70px;
+        width: 70px;
+    }
+  }
+  @media all and (min-width: 600px){
+    .menuitem {
+        display: inline-block;
+        padding:20px;
+        font-size: 16px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:75px;
+        width: 75px;
+    }
+  }
 .active-page {
     /* Underline link when page is active */
     text-decoration: underline;
@@ -64,6 +135,9 @@ a:active {
 .inactive-page {
     text-decoration: none;
 }
+
+/* Home Page Styles */
+
 .profile {
     max-width: 700px;
     margin: 0 auto;
@@ -81,6 +155,9 @@ a:active {
     margin-bottom: auto;
     text-align: center;
 }
+
+/* About Page Styles */
+
 .hometown-img {
     width: 100%;
     height: 100%;
@@ -145,6 +222,9 @@ a:active {
     list-style-type: none;
     padding:0;
 }
+
+/* Work Page Styles /*
+
 /* start grid fallback */
 .project-grid__item {
     display: inline-block;
@@ -207,34 +287,8 @@ th .skillstable {
     text-decoration: underline;
     padding: 5px;
 }
-button,
-.button {
-    border: none;
-    display:inline-block;
-    font-family: inherit;
-    background-color: var(--secondary-color);
-    color: var(--tertiary-color-lightest);
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom:2px solid rgba(0, 0, 0, 0.3);
-    transition: 0.2s opacity;
-}
-button:hover, 
-button:focus,
-.button:hover,
-.button:focus {
-    cursor: pointer;
-    opacity: 0.8;
-}
+ /* Contact Page Styles */
+
 .required {
     color:crimson;
-}
-.page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 100px;
 }
