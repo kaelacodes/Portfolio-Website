@@ -96,19 +96,58 @@ button:focus,
             align-items: center;
     margin:20px;
 }
-.logo {
-    border-radius: 30%;
-    height:75px;
-    width: 75px;
-}
 .menubar {
     list-style-type: none;
     padding-left: 20px;
 }
-.menuitem {
-    display: inline-block;
-    padding: auto;
+@media all and (max-width: 300px){
+    .menuitem {
+        display: inline-block;
+        padding:2px;
+        font-size: 10px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:50px;
+        width: 50px;
+    }
 }
+@media all and (min-width:300px) and (max-width: 400px) {
+    .menuitem {
+        display: inline-block;
+        padding:5px;
+        font-size: 12px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:50px;
+        width: 50px;
+    }
+  }
+@media all and (min-width:400px) and (max-width: 600px) {
+    .menuitem {
+        display: inline-block;
+        padding:10px;
+        font-size: 14px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:70px;
+        width: 70px;
+    }
+  }
+  @media all and (min-width: 600px){
+    .menuitem {
+        display: inline-block;
+        padding:20px;
+        font-size: 16px;
+    }
+    .logo {
+        border-radius: 30%;
+        height:75px;
+        width: 75px;
+    }
+  }
 .active-page {
     /* Underline link when page is active */
     text-decoration: underline;
