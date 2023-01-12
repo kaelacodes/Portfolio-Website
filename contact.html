@@ -55,20 +55,24 @@
             <br>
             <!--<form action="dead link, must add later"-->
             <form id="contact-form" action="contactform.php" method="post">
-                <label class="standard-label" for="name"><span class="required">*</span>Name:</label><br>
-                <input id="name" type="text" placeholder="Your name here" required>
+                <div>
+                    <label class="standard-label" for="name"><span class="required">*</span>Name:</label><br>
+                    <input id="name" type="text" placeholder="Your name here" required>
+                </div>
+                <div>
+                    <label class="standard-label" for="email"><span class="required">*</span>Email:</label><br>
+                    <input id="email" type="email" placeholder="Your email here" required>
+                </div>
+                <div>
+                    <label class="standard-label" for="tel">Phone:</label><br>
+                    <input id="tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Your phone number here" required>
+                </div>
+                <div>
+                    <label class="standard-label" for="message"><span class="required">*</span>Message:</label><br>
+                    <textarea id="message" placeholder="Your message here" maxlength="240" required></textarea>
+                </div>
                 <br>
-                <label class="standard-label" for="email"><span class="required">*</span>Email:</label><br>
-                <input id="email" type="email" placeholder="Your email here" required>
-                <br>
-                <label class="standard-label" for="tel">Phone:</label><br>
-                <input id="tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Your phone number here" required>
-                <br>
-                <label class="standard-label" for="message"><span class="required">*</span>Message:</label><br>
-                <textarea id="message" placeholder="Your message here" maxlength="240" required></textarea>
-                <br>
-                <br>
-                <button type="submit" value="Send Message">Submit</button>
+                <button id="submit-form" type="submit" value="Send Message">Submit</button>
                 <br>
                 <p class="required">Fields marked with * are required</p>
             </form>
@@ -85,5 +89,6 @@
             </div>
         </footer>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>
     </body>
 </html>
