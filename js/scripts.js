@@ -39,6 +39,8 @@
         }
     }
 
+    nameInput.addEventListener("input",validateName);
+
     function validateEmail(){
         let value = emailInput.value;
 
@@ -68,6 +70,8 @@
         }
     }
 
+    emailInput.addEventListener("input",validateEmail);
+
     function validateMessage(){
         let value = messageInput.value;
         if(!value){
@@ -89,6 +93,8 @@
             return true;
         }
     }
+
+    messageInput.addEventListener("input",validateMessage);
 
     function validateTel(){
         let value = telInput.value;
@@ -112,6 +118,8 @@
             return true;
         }
     }
+
+    telInput.addEventListener("input",validateTel);
 
     function validateForm(){
         if(validateName(true) && validateEmail(true) && validateMessage(true) && validateTel(true)){
