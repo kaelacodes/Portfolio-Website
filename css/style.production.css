@@ -422,3 +422,6 @@ th .skillstable {
 .required {
     color:crimson;
 }
+.error-message {
+    color:crimson;
+}
