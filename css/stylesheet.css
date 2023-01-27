@@ -239,6 +239,7 @@ button:focus,
     grid-template-rows: 1fr 1fr;
     margin:0;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .project-grid__item {
     background-color: var(--tertiary-color-lightest);
@@ -246,6 +247,10 @@ button:focus,
     min-height: auto;
     margin-right:20px;
     margin-bottom:20px;
+}
+.project-description{
+    margin-left:5px;
+    margin-right:5px;
 }
 @supports (grid-gap: 20px) {
     .project-grid {
