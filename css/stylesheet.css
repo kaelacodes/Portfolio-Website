@@ -91,6 +91,13 @@ button:focus,
         height:50px;
         width: 50px;
     }
+    .page-header{
+        margin: 10px;
+        padding: 10px;
+    }
+    .menubar {
+        padding-left: 10px;
+    }
 }
 @media all and (min-width:300px) and (max-width: 400px) {
     .menuitem {
@@ -260,16 +267,69 @@ button:focus,
         margin: 0px;
     }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
+@media all and (max-width: 350px) {
+    main{
+        margin:auto;
+        padding:10px;
+    }
+    .project-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-top:15px;
+    }
+      .project-grid > *:nth-child(1) {
+        -ms-grid-row: 1;
+        grid-row:1;
+        -ms-grid-column: 1;
+        grid-column:1;
+    }
+    .project-grid > *:nth-child(2) {
+        -ms-grid-row: 2;
+        grid-row:2;
+        -ms-grid-column: 1;
+        grid-column:1;
+    }
+    .project-grid > *:nth-child(3) {
+        -ms-grid-row: 3;
+        grid-row:3;
+        -ms-grid-column: 1;
+        grid-column: 1;
+    }
+    .project-grid > *:nth-child(4) {
+        -ms-grid-row: 4;
+        grid-row: 4;
+        -ms-grid-column: 1;
+        grid-column: 1;
+    }
+    .project-grid > *:nth-child(5) {
+        -ms-grid-row: 5;
+        grid-row: 5;
+        -ms-grid-column: 1;
+        grid-column: 1;
+    }
+    .project-grid > *:nth-child(6) {
+        -ms-grid-row: 6;
+        grid-row: 6;
+        -ms-grid-column: 1;
+        grid-column: 1;
+    }
   }
+
+@media all and (min-width: 350px) and (max-width: 500px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
-@media all and (max-width: 500px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
+
 @media all and (max-width: 750px){
   .project-grid {
     grid-gap: 10px;
